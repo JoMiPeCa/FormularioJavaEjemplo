@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form id="traslado" action="formulario.jsp" method="POST">
+                <table>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input type="text" id="nombre" name="nombre"></td>
+                    </tr>
+                    <tr>
+                        <td>Apellido</td>
+                        <td><input type="text" id="apellido" name="apellido"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" id="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Sexo</td>
+                        <td><select>
+                                <option id="sexo" value=0>Seleccione....</option>
+                                <option id="sexo" value=1>Masculino</option>
+                                <option id="sexo" value=2>Femenino</option>
+                                <!--<option id="sexo" value="3">Afrodita</option>-->
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Traslado</td>
+                        <td><input type="checkbox" id="traslado" value="auto" name="traslado">Automovil</td>
+                        <td><input type="checkbox" id="traslado" value="metro" name="traslado">Metro</td>
+                        <td><input type="checkbox" id="traslado" value="bici" name="traslado">Bicicleta</td>
+                        <td><input type="checkbox" id="traslado" value="pie" name="traslado">Caminando</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Registrar"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
